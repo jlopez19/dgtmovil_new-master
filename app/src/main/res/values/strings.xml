@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CGT</string>
+
+    <string name="UseWith">Use with</string>
+    <string name="StartScanning">Start scanning</string>
+    <string name="hello">Hello World, CaptureSignatureActivity!</string>
+
+    <string name="external_dir">GetSignature</string>
+    <string name="tipo_de_comunidad_a_la_que_pertenece_se_ale_con_una_x_la_opci_n_que_corresponda">Tipo de comunidad a la que pertenece: (señale con una X la opción que corresponda)</string>
+    <string name="title_activity_form_mesa_tecnica">FormMesaTecnicaActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

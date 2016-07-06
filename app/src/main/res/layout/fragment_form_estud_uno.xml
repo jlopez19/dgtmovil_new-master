@@ -1,0 +1,481 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="general.me.edu.dgtmovil.dgtmovil.formregisestudiante.FormEstudUnoFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.25"
+                    android:gravity="center_horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/lp1"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:layout_height="match_parent"
+                        android:text="..."
+                        android:textSize="16sp"
+                        android:layout_marginLeft="@dimen/quince_dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_color"  />
+
+                    <EditText
+                        android:id="@+id/p1"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.44"
+                        android:inputType="text"
+                        android:textSize="17sp"
+                        android:paddingLeft="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/text_color"
+                        android:layout_height="@dimen/tamanio_txt"
+                        android:background="@drawable/textbox_form_activo" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.14"
+                        android:layout_height="55dp"
+                        android:layout_marginBottom="1dp"
+                        android:id="@+id/btn_addComNombre"
+                        android:padding="10dp"
+                        android:src="@drawable/ico_agregar"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.02"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/lp2"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:layout_height="match_parent"
+                        android:text="..."
+                        android:textSize="16sp"
+                        android:layout_marginLeft="@dimen/quince_dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_color"  />
+
+
+                    <EditText
+                        android:id="@+id/p2"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.44"
+                        android:inputType="text"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/text_color"
+                        android:layout_height="@dimen/tamanio_txt"
+                        android:background="@drawable/textbox_form_activo"/>
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.14"
+                        android:layout_height="55dp"
+                        android:layout_marginBottom="3dp"
+                        android:id="@+id/btn_addComApellido"
+                        android:padding="10dp"
+                        android:src="@drawable/ico_agregar"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.02"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/lp3"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:layout_height="match_parent"
+                        android:text="..."
+                        android:textSize="16sp"
+                        android:layout_marginLeft="@dimen/quince_dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_color" />
+
+
+                    <Spinner
+                        android:id="@+id/p3"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/spinner_cerrado"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:layout_height="@dimen/tamanio_txt">
+                    </Spinner>
+
+                    <TextView
+                        android:id="@+id/p3_obligatorio"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.08"
+                        android:layout_height="match_parent"
+                        android:textSize="15sp"
+                        android:textColor="@color/text_colorRed"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.02"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/lp4"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:layout_height="match_parent"
+                        android:text="..."
+                        android:textSize="16sp"
+                        android:layout_marginLeft="@dimen/quince_dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_color"  />
+
+                    <EditText
+                        android:id="@+id/p4"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.44"
+                        android:inputType="number"
+                        android:paddingLeft="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/text_color"
+                        android:layout_height="@dimen/tamanio_txt"
+                        android:background="@drawable/textbox_form_activo"/>
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.14"
+                        android:layout_height="55dp"
+                        android:layout_marginBottom="3dp"
+                        android:id="@+id/btn_addComDocumento"
+                        android:padding="10dp"
+                        android:src="@drawable/ico_agregar"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.02"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/lp5"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:layout_height="match_parent"
+                        android:text="..."
+                        android:textSize="16sp"
+                        android:layout_marginLeft="@dimen/quince_dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_color"  />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="0.1"
+                        android:layout_height="55dp"
+                        android:layout_marginBottom="3dp"
+                        android:id="@+id/btn_fecha"
+                        android:background="@drawable/ico_calendario"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.03"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp"
+                        android:id="@+id/textView2" />
+
+                    <TextView
+                        android:id="@+id/p5"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:inputType="date"
+                        android:paddingLeft="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/text_color"
+                        android:layout_height="@dimen/tamanio_txt"
+                        android:background="@drawable/textbox_form_activo"/>
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.14"
+                        android:layout_height="55dp"
+                        android:layout_marginBottom="3dp"
+                        android:id="@+id/btn_addComFecha"
+                        android:padding="10dp"
+                        android:src="@drawable/ico_agregar"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.02"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/lp6"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:layout_height="match_parent"
+                        android:text=".."
+                        android:textSize="15sp"
+                        android:layout_marginLeft="@dimen/quince_dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_color" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.1"
+                        android:layout_height="match_parent"
+                        android:text="Lat"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_color"
+                        android:id="@+id/textView7" />
+
+                    <EditText
+                        android:id="@+id/p6"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:inputType="text"
+                        android:paddingLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/text_color"
+                        android:layout_height="@dimen/tamanio_txt"
+                        android:background="@drawable/textbox_form_activo"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_horizontal"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:layout_height="match_parent"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="@dimen/quince_dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_color" />
+                    <TextView
+                        android:id="@+id/l_longitud"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.1"
+                        android:layout_height="match_parent"
+                        android:text="Lon"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_color" />
+
+
+                    <EditText
+                        android:id="@+id/txt_longitud"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.44"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/tamanio_txt"
+                        android:background="@drawable/textbox_form_activo"/>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.14"
+                        android:layout_height="55dp"
+                        android:layout_marginBottom="3dp"
+                        android:id="@+id/btn_addComCoord"
+                        android:padding="10dp"
+                        android:src="@drawable/ico_agregar"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.02"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/lp7"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:layout_height="match_parent"
+                        android:text="..."
+                        android:textSize="15sp"
+                        android:layout_marginLeft="@dimen/quince_dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_color" />
+
+
+                    <Spinner
+                        android:id="@+id/p7"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.37"
+                        android:background="@drawable/spinner_cerrado"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:gravity="center_horizontal"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/tamanio_txt"
+                        android:focusableInTouchMode="true">
+                    </Spinner>
+                    <TextView
+                        android:id="@+id/p7_obligatorio"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.05"
+                        android:textColor="@color/text_colorRed"
+                        android:layout_height="match_parent"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical" />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.14"
+                        android:layout_height="55dp"
+                        android:layout_marginBottom="3dp"
+                        android:id="@+id/btn_addComEstudio"
+                        android:padding="10dp"
+                        android:src="@drawable/ico_agregar"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.02"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp" />
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/lp8"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:layout_height="match_parent"
+                        android:text="..."
+                        android:textSize="15sp"
+                        android:layout_marginLeft="@dimen/quince_dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_color" />
+
+                    <Spinner
+                        android:id="@+id/p8"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.37"
+                        android:background="@drawable/spinner_cerrado"
+                        style="@android:style/Widget.Holo.Light.Spinner"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_height="@dimen/tamanio_txt"
+                        android:focusableInTouchMode="true">
+                    </Spinner>
+
+                    <TextView
+                        android:id="@+id/p8_obligatorio"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.05"
+                        android:layout_height="match_parent"
+                        android:textSize="15sp"
+                        android:textColor="@color/text_colorRed"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical" />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.14"
+                        android:layout_height="55dp"
+                        android:layout_marginBottom="3dp"
+                        android:id="@+id/btn_addComOpina"
+                        android:padding="10dp"
+                        android:src="@drawable/ico_agregar"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.02"
+                        android:layout_height="match_parent"
+                        android:textSize="16sp" />
+                </TableRow>
+
+            </TableLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lector"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="general.me.edu.dgtmovil.dgtmovil.LectorActivity">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".LectorActivity" >
+
+        <Button
+            android:id="@+id/btnScan"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:onClick="btnScan_click"
+            style="@android:style/Widget.Button"
+            android:text="@string/StartScanning" />
+
+        <TextView
+            android:id="@+id/tvVersion"
+            android:layout_marginTop="@dimen/tv_version_top_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

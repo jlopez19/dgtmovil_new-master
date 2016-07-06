@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="general.me.edu.dgtmovil">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_cgt"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".dgtmovil.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".dgtmovil.Sincronizar"
+            android:parentActivityName=".dgtmovil.MenuPrincipal"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="general.me.edu.dgtmovil.dgtmovil.MenuPrincipal" />
+        </activity>
+        <activity android:name=".dgtmovil.CaptureSignature" />
+        <activity
+            android:name=".dgtmovil.Reprocesar"
+            android:parentActivityName=".dgtmovil.MenuPrincipal"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="general.me.edu.dgtmovil.dgtmovil.FormulariosActivity" />
+        </activity>
+        <activity android:name=".dgtmovil.MenuPrincipal" />
+        <!--
+ATTENTION: This was auto-generated to add Google Play services to your project for
+ App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".dgtmovil.FormulariosActivity"
+            android:parentActivityName=".dgtmovil.MenuPrincipal"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="general.me.edu.dgtmovil.dgtmovil.FormulariosActivity" />
+        </activity>
+        <activity
+            android:name=".dgtmovil.DatosActivity"
+            android:parentActivityName=".dgtmovil.FormulariosActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="general.me.edu.dgtmovil.dgtmovil.FormulariosActivity" />
+        </activity>
+        <activity android:name=".dgtmovil.LectorActivity" />
+        <activity android:name=".dgtmovil.MainActivity" />
+        <activity android:name=".dgtmovil.formpreinscripcion.CargarDatosActivity" />
+        <activity android:name=".dgtmovil.formactafocalizacion.FromActaFocaActivity" />
+        <activity
+            android:name=".dgtmovil.formmesatecnica.FormMesaTecnicaActivity"
+            android:label="@string/title_activity_form_mesa_tecnica"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".dgtmovil.formmesaseguridad.FormMesaSeguridadActivity" />
+        <activity android:name=".dgtmovil.formactaforomunpal.ActaForoMunpalActivity" />
+        <activity android:name=".dgtmovil.ReportesActivity" />
+        <activity android:name=".dgtmovil.formactaasambleveredal.FormAsableaActivity" />
+        <activity android:name=".dgtmovil.formregisestudiante.RegistarEstudianteActivity"></activity>
+    </application>
+
+</manifest>

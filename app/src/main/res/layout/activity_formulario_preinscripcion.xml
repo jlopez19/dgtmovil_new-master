@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_formulario_preinscripcion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="general.me.edu.dgtmovil.dgtmovil.formulariosdos.FormularioPreinscripcionActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            >
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                >
+                <TextView
+                    android:id="@+id/tv_departamento"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="match_parent"
+                    android:text="Departamento"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="@dimen/quince_dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical|bottom"
+                    android:textColor="@android:color/darker_gray"  />
+
+                <Spinner
+                    android:id="@+id/spn_departamento"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:inputType="text"
+                    android:gravity="center_horizontal"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginRight="@dimen/quince_dp"
+                    android:layout_height="@dimen/tamanio_txt"
+                    android:background="@drawable/textbox_form_activo" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/tv_municipio"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="match_parent"
+                    android:text="Municipio"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="@dimen/quince_dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical|bottom"
+                    android:textColor="@android:color/darker_gray" />
+
+
+                <Spinner
+                    android:id="@+id/spn_municipio"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="@dimen/quince_dp"
+                    android:layout_weight="0.6"
+                    android:gravity="center_horizontal"
+                    android:textColor="@android:color/darker_gray"
+                    android:inputType="text"
+                    android:layout_height="@dimen/tamanio_txt"
+                    android:background="@drawable/textbox_form_activo"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                >
+                <TextView
+                    android:id="@+id/lp3"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="match_parent"
+                    android:text="Vereda"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="@dimen/quince_dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical|bottom"
+                    android:textColor="@android:color/darker_gray" />
+
+
+                <EditText
+                    android:id="@+id/txt_vereda"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:inputType="text"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/textbox_form_activo"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginRight="@dimen/quince_dp"
+                    android:layout_height="@dimen/tamanio_txt"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                >
+                <TextView
+                    android:id="@+id/tv_comunidad"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="match_parent"
+                    android:text="Comunidad"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="@dimen/quince_dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical|bottom"
+                    android:textColor="@android:color/darker_gray" />
+
+                <EditText
+                    android:id="@+id/txt_comunidad"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:inputType="text"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/textbox_form_activo"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginRight="@dimen/quince_dp"
+                    android:layout_height="@dimen/tamanio_txt"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                >
+                <TextView
+                    android:id="@+id/tv_tip_com"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="match_parent"
+                    android:text="@string/tipo_de_comunidad_a_la_que_pertenece_se_ale_con_una_x_la_opci_n_que_corresponda"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="@dimen/quince_dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical|bottom"
+                    android:textColor="@android:color/darker_gray" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                >
+            <RadioGroup android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton android:id="@+id/rbtn_campesino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Campesino"
+                    android:textColor="@color/text_color"
+                    android:onClick="onRadioButtonClicked"/>
+
+                <RadioButton android:id="@+id/rbtn_afro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"
+                    android:text="Afrodecendiente"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/rbtn_raizal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"
+                    android:text="Raizal"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                >
+                <RadioGroup android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/rbtn_indigena"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color"
+                        android:text="Indigena     "
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/rbtn_rom_gitano"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color"
+                        android:text="Pueblo Rom/Gitano"
+                        android:onClick="onRadioButtonClicked"/>
+                </RadioGroup>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                >
+                <TextView
+                    android:id="@+id/tv_nucleo"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="match_parent"
+                    android:text="1. Nucleo Familiar"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_color"
+                    android:layout_marginLeft="@dimen/quince_dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical|bottom" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                >
+
+                    <TextView android:id="@+id/tv_nomyap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nombres y apellidos"
+                        android:textColor="@android:color/darker_gray"
+                        android:onClick="onRadioButtonClicked"/>
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                >
+                <TextView
+                    android:id="@+id/lp5"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="match_parent"
+                    android:text="..."
+                    android:textSize="16sp"
+                    android:layout_marginLeft="@dimen/quince_dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical|bottom"
+                    android:textColor="@android:color/darker_gray" />
+
+
+                <EditText
+                    android:id="@+id/p5"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:inputType="text"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginRight="@dimen/quince_dp"
+                    android:layout_height="@dimen/tamanio_txt"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/textbox_form_activo"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:gravity="center_horizontal"
+                >
+                <TextView
+                    android:id="@+id/lp6"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="match_parent"
+                    android:text="..."
+                    android:textSize="16sp"
+                    android:layout_marginLeft="@dimen/quince_dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical|bottom"
+                    android:textColor="@android:color/darker_gray"/>
+
+
+                <EditText
+                    android:id="@+id/p6"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:inputType="text"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginRight="@dimen/quince_dp"
+                    android:layout_height="@dimen/tamanio_txt"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/textbox_form_activo"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                >
+                <TextView
+                    android:id="@+id/lp7"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="match_parent"
+                    android:text="..."
+                    android:textSize="16sp"
+                    android:layout_marginLeft="@dimen/quince_dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical|bottom"
+                    android:textColor="@android:color/darker_gray" />
+
+
+                <Spinner
+                    android:id="@+id/p7"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/textbox_form_pasivo"
+                    android:gravity="center_horizontal"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginRight="@dimen/quince_dp"
+                    android:layout_height="@dimen/tamanio_txt"
+                    android:focusableInTouchMode="true">
+                </Spinner>
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:gravity="center_horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/lp8"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="match_parent"
+                    android:text="..."
+                    android:textSize="16sp"
+                    android:layout_marginLeft="@dimen/quince_dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical|bottom"
+                    android:textColor="@android:color/darker_gray" />
+
+                <Spinner
+                    android:id="@+id/p8"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/textbox_form_pasivo"
+                    android:gravity="center_horizontal"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginRight="@dimen/quince_dp"
+                    android:layout_height="@dimen/tamanio_txt"
+                    android:focusableInTouchMode="true">
+                </Spinner>
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:gravity="center_horizontal"
+                >
+                <TextView
+                    android:id="@+id/lp9"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="match_parent"
+                    android:text="..."
+                    android:textSize="16sp"
+                    android:layout_marginLeft="@dimen/quince_dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical|bottom"
+                    android:textColor="@android:color/darker_gray" />
+
+
+
+                <Spinner
+                    android:id="@+id/p9"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/textbox_form_pasivo"
+                    android:gravity="center_horizontal"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginRight="@dimen/quince_dp"
+                    android:layout_height="@dimen/tamanio_txt"
+                    android:focusableInTouchMode="true">
+                </Spinner>
+            </TableRow>
+
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                >
+                <TextView
+                    android:id="@+id/lp10"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="match_parent"
+                    android:text="..."
+                    android:textSize="16sp"
+                    android:layout_marginLeft="@dimen/quince_dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical|bottom"
+                    android:textColor="@android:color/darker_gray" />
+                <EditText
+                    android:id="@+id/p10"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:inputType="text"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginRight="@dimen/quince_dp"
+                    android:layout_height="@dimen/tamanio_txt"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/textbox_form_activo"/>
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:gravity="center_horizontal"
+                >
+                <TextView
+                    android:id="@+id/lp11"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="match_parent"
+                    android:text="..."
+                    android:textSize="16sp"
+                    android:layout_marginLeft="@dimen/quince_dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical|bottom"
+                    android:textColor="@android:color/darker_gray"/>
+
+
+                <EditText
+                    android:id="@+id/p11"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:inputType="text"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginRight="@dimen/quince_dp"
+                    android:layout_height="@dimen/tamanio_txt"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/textbox_form_activo"/>
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:gravity="center_horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="0.45"
+                    android:id="@+id/leer_cedula"
+                    android:onClick="btnScan_click"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_leercedula"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_weight="0.7"
+                android:layout_marginBottom="8dp"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.05"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.45"
+                    android:layout_height="70dp"
+                    android:background="@drawable/contenedor_agregarfoto"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.45"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/ico_huella"/>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.05"
+                    android:layout_height="wrap_content"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|bottom"
+                android:layout_height="0dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="3dp"
+                    android:id="@+id/buttonGuardar"
+                    android:background="@drawable/btn_guardar"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"/>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>}
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

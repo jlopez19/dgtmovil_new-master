@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_reprocesar"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo"
+    android:layout_height="match_parent"
+    tools:context="general.me.edu.dgtmovil.dgtmovil.Reprocesar">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="470dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="300dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="15dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="7dp"
+                android:text="CENSO"
+                android:textColor="@android:color/white"
+                android:textSize="25dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewCantComparendostitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Formularios sin enviar:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textViewCantComparendos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewMensajeReproceso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                />
+
+
+            <Button
+                android:id="@+id/buttonReprocesar"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Reprocesar"
+                android:background="@drawable/btn_formulario_x"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:width="160dp"
+                android:layout_marginBottom="15dp"
+                />
+            <TextView
+                android:id="@+id/resultado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="25dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressBarAgentes"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/imageViewReenviar"
+                android:layout_width="76dp"
+                android:layout_height="100dp"
+                android:layout_weight="0.15" />
+
+            <ImageView
+                android:id="@+id/imageButtonSalirReproceso"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="right"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:text=" .." />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
